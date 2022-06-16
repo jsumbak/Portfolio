@@ -35,7 +35,7 @@ max-width: 350px;
 
 /* background image for header*/
 .Mainheader {
-  background: url(/assets/images/Header-background.png);
+  background-image: url(./assets/images/Header-background.png);
   max-height: 200px;
 }
 
