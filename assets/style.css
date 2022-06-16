@@ -1,6 +1,7 @@
 :root {
   --font-family: Georgia, 'Times New Roman', Times, serif;
-  --justify-content:space-between;
+  --background-color: rgb(73, 51, 144);
+  --justify-content: #b9c6ae;
   --display: flex;
 }
 
@@ -10,14 +11,14 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: rgb(223, 216, 216);
-  margin: auto;
+ margin: auto;
 }
 
 header {
   font-size: 20px;
   color: white;
   display: var(--flex);
-  justify-content: var(--justify-content);
+  justify-content: space-between;
   background-color: rgb(170, 170, 243);
 }
 /* Portrait picture*/
@@ -25,11 +26,11 @@ header {
 margin-left: 20px;  
 margin-right: 30px;
 margin-bottom: 10px;
-border: solid black 1px;
+border: solid black 2px;
 padding: 2px;
 float: left;
-max-height: 275px;
-max-width: 375px;
+max-height: 250px;
+max-width: 350px;
 }
 
 /* background image for header*/
@@ -58,17 +59,17 @@ background-color: white;
 }
 
 nav ul {
-  display: var(--flex);
+  display: flex;
   min-width: 200px;
   margin-right: 10px;
-  justify-content: var(--justify-content);
+  justify-content: space-between;
   color: white;
   float: right;
   margin-top: 0px;
 }
 
 main {
-    display: var(--flex);
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 60px;
@@ -105,49 +106,42 @@ main, .projects {
 .photo {
   box-sizing: border-box;
   border: 2px solid black;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  /* padding: 0px;
+  padding: 0px;
   flex-wrap: wrap;
-  display:flex;
-  opacity: 1; */
-  /* position: relative;
+  display: flex;
+  opacity: 1;
+  position: relative;
   text-align: center;
   font-size: 15px; 
   font-weight: bold;
-  color: black; */
-  /* max-height: 250px;
+  color: black;
+  max-height: 250px;
   max-width: 350px;
-  flex-direction: row;
-  justify-content: center;  */
+  flex-direction: column;
 }
-.resize {
-  width: 350px;
-  height: 250px;
-}
+
 /* add hover effect on pictures*/
 .photo:hover{
   opacity: 0.3;
 }
 
 /* Centered text on pictures*/
-/* .centered {
+.centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-} */
+}
 
-/* img{ 
+img{ 
   max-height: 500px;
   max-width: 800px;
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-} */
+  flex-direction:column;
+}
 
 section, p {
 margin: 20px;
@@ -159,9 +153,9 @@ color: black;
 
 footer {
 font-size: 20px; 
-display: var(--flex);
+display: flex;
 color: white;
-justify-content:var(--justify-content);
+justify-content:space-between;
 background-color: rgb(223, 216, 216) ;
 padding: 1%;
 margin-top: 50px;
